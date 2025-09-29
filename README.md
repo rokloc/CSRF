@@ -8,6 +8,11 @@
 
 # CSRF対策具体例（Spring Boot + Spring Security）
 ## (1) CSRFトークンをセッションに紐づけ（SpringSecurityではデフォルトでON）
+POSTリクエストフォームにCSRFトークンを紐づけ
+<img width="795" height="197" alt="スクリーンショット (16)" src="https://github.com/user-attachments/assets/c40e6b96-dfd6-4130-b4b4-09428dc024ea" />
+SpringSecurityではCSRF対策がデフォルトでオンになっている
+そのためPOSTリクエストには上記のCSRFトークンを紐づけする必要がある。
+結果としてトークンを知らない他のサイトからのPOSTリクエストを防げる。
 
 ※CSRFトークンはPOSTリクエストのみに紐づけされる
 - 対策しないとGETに対してCSRFが通ってしまう
