@@ -22,6 +22,7 @@ SpringSecurityではCSRF対策がデフォルトでオンになっている
 
 ## (2) SameSite Cookie属性の設定
 外部サイトからのリクエストに、Cookieを付与させないように設定
+（application.properties）
 <img width="401" height="60" alt="スクリーンショット (17)" src="https://github.com/user-attachments/assets/c3be6cc7-c379-48ae-b729-4df28f7286ab" />
 
 ※XSSでクッキーが盗まれると、SameSite=Strictはそもそも無意味になるためクッキーが盗まれないための脆弱性対策と連携が必須
